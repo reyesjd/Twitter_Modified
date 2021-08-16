@@ -1,9 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import { Helmet } from "react-helmet";
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Twitter</title>
+        <meta name="description" content="Twitter main page." />
+      </Helmet>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
